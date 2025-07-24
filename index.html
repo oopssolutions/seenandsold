@@ -12,100 +12,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <style>
-      body {
-        font-family: "Segoe UI", sans-serif;
-      }
-
-      .top-bar {
-        background-color: #ffd449;
-        padding: 5px 0;
-        font-size: 14px;
-      }
-
-      .navbar {
-        background-color: #fff;
-      }
-      .navbar-brand img {
-        max-height: 70px;
-      }
-
-      .btn-yellow {
-        background-color: #ffd449;
-        color: #000;
-        font-weight: 600;
-      }
-
-      .hero {
-        background-color: #fff5d1;
-        padding: 60px 0;
-      }
-
-      .hero h1 {
-        font-weight: 800;
-        font-size: 2.8rem;
-      }
-
-      .hero p {
-        font-size: 1rem;
-        color: #333;
-      }
-
-      .hero img {
-        max-width: 100%;
-      }
-
-      .brand-logos img {
-        max-height: 40px;
-        max-width: 100%;
-      }
-
-      .offcanvas-start {
-        background-color: #ffd449;
-        color: white;
-      }
-
-      .offcanvas-body a {
-        color: white;
-        font-weight: 600;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        margin-bottom: 15px;
-        text-decoration: none;
-      }
-      .service-border {
-        border: 1px solid;
-        border-image: linear-gradient(180deg, #f7ce4d 0%, #ffffff 100%) 1;
-        border-radius: 20px;
-      }
-
-      /* Extra small devices (phones, 600px and down) */
-      @media only screen and (max-width: 600px) {
-        .hero h1 {
-          font-size: 1.2rem;
-        }
-        .hero p {
-          font-size: 0.8rem;
-        }
-      }
-
-      /* Small devices (portrait tablets and large phones, 600px and up) */
-      @media only screen and (min-width: 600px) {
-      }
-
-      /* Medium devices (landscape tablets, 768px and up) */
-      @media only screen and (min-width: 768px) {
-      }
-
-      /* Large devices (laptops/desktops, 992px and up) */
-      @media only screen and (min-width: 992px) {
-      }
-
-      /* Extra large devices (large laptops and desktops, 1200px and up) */
-      @media only screen and (min-width: 1200px) {
-      }
-    </style>
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
@@ -132,7 +44,7 @@
           ><img src="assets/img/seenandsold.webp" alt="SEEN & SOLD"
         /></a>
         <button
-          class="btn d-lg-none"
+          class="btn d-lg-none text-warning"
           type="button"
           data-bs-toggle="offcanvas"
           data-bs-target="#mobileMenu"
@@ -161,7 +73,7 @@
           <img
             src="assets/img/seenandsold.webp"
             alt="Logo"
-            style="height: 30px"
+            style="max-height: 70px"
           />
         </h5>
         <button
@@ -239,122 +151,887 @@
         <h2 class="fw-bold mb-5">
           We provide the Perfect Solution to your business growth
         </h2>
-        <div class="row g-4">
-          <!-- Card Item -->
-          <div class="col-md-4">
-            <div class="service-border p-4 h-100">
-              <div class="bg-warning d-inline-block p-3 rounded mb-3">
-                <i class="fa fa-vector-square fs-4"></i>
+        <div class="d-none d-lg-block">
+          <div class="row g-4">
+            <!-- Card Item -->
+            <div class="col-md-4">
+              <div class="service-border p-4 h-100">
+                <div class="bg-warning d-inline-block p-3 rounded mb-3">
+                  <i class="fa fa-vector-square fs-4"></i>
+                </div>
+                <h5 class="fw-bold">System</h5>
+                <p>We help identify the best ways to improve your business</p>
+                <a href="#" class="text-dark fw-semibold text-decoration-none"
+                  >Learn More <i class="fa fa-arrow-right ms-1"></i
+                ></a>
               </div>
-              <h5 class="fw-bold">System</h5>
-              <p>We help identify the best ways to improve your business</p>
-              <a href="#" class="text-dark fw-semibold text-decoration-none"
-                >Learn More <i class="fa fa-arrow-right ms-1"></i
-              ></a>
+            </div>
+            <!-- Card Item -->
+            <div class="col-md-4">
+              <div class="service-border p-4 h-100">
+                <div class="bg-warning d-inline-block p-3 rounded mb-3">
+                  <i class="fa fa-heart fs-4"></i>
+                </div>
+                <h5 class="fw-bold">Files</h5>
+                <p>We help identify the best ways to improve your business</p>
+                <a href="#" class="text-dark fw-semibold text-decoration-none"
+                  >Learn More <i class="fa fa-arrow-right ms-1"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Card Item -->
+            <div class="col-md-4">
+              <div class="service-border p-4 h-100">
+                <div class="bg-warning d-inline-block p-3 rounded mb-3">
+                  <i class="fa fa-chart-line fs-4"></i>
+                </div>
+                <h5 class="fw-bold">Marketing</h5>
+                <p>We help identify the best ways to improve your business</p>
+                <a href="#" class="text-dark fw-semibold text-decoration-none"
+                  >Learn More <i class="fa fa-arrow-right ms-1"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Card Item -->
+            <div class="col-md-4">
+              <div class="service-border p-4 h-100">
+                <div class="bg-warning d-inline-block p-3 rounded mb-3">
+                  <i class="fa fa-graduation-cap fs-4"></i>
+                </div>
+                <h5 class="fw-bold">Courses</h5>
+                <p>We help identify the best ways to improve your business</p>
+                <a href="#" class="text-dark fw-semibold text-decoration-none"
+                  >Learn More <i class="fa fa-arrow-right ms-1"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Card Item -->
+            <div class="col-md-4">
+              <div class="service-border p-4 h-100">
+                <div class="bg-warning d-inline-block p-3 rounded mb-3">
+                  <i class="fa fa-comments fs-4"></i>
+                </div>
+                <h5 class="fw-bold">Communication</h5>
+                <p>We help identify the best ways to improve your business</p>
+                <a href="#" class="text-dark fw-semibold text-decoration-none"
+                  >Learn More <i class="fa fa-arrow-right ms-1"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Card Item -->
+            <div class="col-md-4">
+              <div class="service-border p-4 h-100">
+                <div class="bg-warning d-inline-block p-3 rounded mb-3">
+                  <i class="fa fa-newspaper fs-4"></i>
+                </div>
+                <h5 class="fw-bold">News</h5>
+                <p>We help identify the best ways to improve your business</p>
+                <a href="#" class="text-dark fw-semibold text-decoration-none"
+                  >Learn More <i class="fa fa-arrow-right ms-1"></i
+                ></a>
+              </div>
             </div>
           </div>
-          <!-- Card Item -->
-          <div class="col-md-4">
-            <div class="service-border p-4 h-100">
-              <div class="bg-warning d-inline-block p-3 rounded mb-3">
-                <i class="fa fa-heart fs-4"></i>
+        </div>
+
+        <div class="d-lg-none">
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-4 col-6">
+              <div
+                class="card border-0 shadow-sm rounded-4 overflow-hidden h-100"
+              >
+                <img
+                  src="assets/img/s1.webp"
+                  class="card-img-top"
+                  alt="System"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">System</h5>
+                  <p class="card-text text-secondary">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <a
+                    href="#"
+                    class="text-warning fw-semibold text-decoration-none"
+                    >Learn More</a
+                  >
+                </div>
               </div>
-              <h5 class="fw-bold">Files</h5>
-              <p>We help identify the best ways to improve your business</p>
-              <a href="#" class="text-dark fw-semibold text-decoration-none"
-                >Learn More <i class="fa fa-arrow-right ms-1"></i
-              ></a>
             </div>
-          </div>
-          <!-- Card Item -->
-          <div class="col-md-4">
-            <div class="service-border p-4 h-100">
-              <div class="bg-warning d-inline-block p-3 rounded mb-3">
-                <i class="fa fa-chart-line fs-4"></i>
+
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-4 col-6">
+              <div
+                class="card border-0 shadow-sm rounded-4 overflow-hidden h-100"
+              >
+                <img
+                  src="assets/img/s2.webp"
+                  class="card-img-top"
+                  alt="Files"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Files</h5>
+                  <p class="card-text text-secondary">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <a
+                    href="#"
+                    class="text-warning fw-semibold text-decoration-none"
+                    >Learn More</a
+                  >
+                </div>
               </div>
-              <h5 class="fw-bold">Marketing</h5>
-              <p>We help identify the best ways to improve your business</p>
-              <a href="#" class="text-dark fw-semibold text-decoration-none"
-                >Learn More <i class="fa fa-arrow-right ms-1"></i
-              ></a>
             </div>
-          </div>
-          <!-- Card Item -->
-          <div class="col-md-4">
-            <div class="service-border p-4 h-100">
-              <div class="bg-warning d-inline-block p-3 rounded mb-3">
-                <i class="fa fa-graduation-cap fs-4"></i>
+
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-4 col-6">
+              <div
+                class="card border-0 shadow-sm rounded-4 overflow-hidden h-100"
+              >
+                <img
+                  src="assets/img/s3.webp"
+                  class="card-img-top"
+                  alt="Files"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Communication</h5>
+                  <p class="card-text text-secondary">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <a
+                    href="#"
+                    class="text-warning fw-semibold text-decoration-none"
+                    >Learn More</a
+                  >
+                </div>
               </div>
-              <h5 class="fw-bold">Courses</h5>
-              <p>We help identify the best ways to improve your business</p>
-              <a href="#" class="text-dark fw-semibold text-decoration-none"
-                >Learn More <i class="fa fa-arrow-right ms-1"></i
-              ></a>
             </div>
-          </div>
-          <!-- Card Item -->
-          <div class="col-md-4">
-            <div class="service-border p-4 h-100">
-              <div class="bg-warning d-inline-block p-3 rounded mb-3">
-                <i class="fa fa-comments fs-4"></i>
+            <!-- Card 4 -->
+            <div class="col-md-6 col-lg-4 col-6">
+              <div
+                class="card border-0 shadow-sm rounded-4 overflow-hidden h-100"
+              >
+                <img
+                  src="assets/img/s4.webp"
+                  class="card-img-top"
+                  alt="Files"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Marketing</h5>
+                  <p class="card-text text-secondary">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <a
+                    href="#"
+                    class="text-warning fw-semibold text-decoration-none"
+                    >Learn More</a
+                  >
+                </div>
               </div>
-              <h5 class="fw-bold">Communication</h5>
-              <p>We help identify the best ways to improve your business</p>
-              <a href="#" class="text-dark fw-semibold text-decoration-none"
-                >Learn More <i class="fa fa-arrow-right ms-1"></i
-              ></a>
             </div>
-          </div>
-          <!-- Card Item -->
-          <div class="col-md-4">
-            <div class="service-border p-4 h-100">
-              <div class="bg-warning d-inline-block p-3 rounded mb-3">
-                <i class="fa fa-newspaper fs-4"></i>
+
+            <!-- Card 5 -->
+            <div class="col-md-6 col-lg-4 col-6">
+              <div
+                class="card border-0 shadow-sm rounded-4 overflow-hidden h-100"
+              >
+                <img
+                  src="assets/img/s5.webp"
+                  class="card-img-top"
+                  alt="Files"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Courses</h5>
+                  <p class="card-text text-secondary">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <a
+                    href="#"
+                    class="text-warning fw-semibold text-decoration-none"
+                    >Learn More</a
+                  >
+                </div>
               </div>
-              <h5 class="fw-bold">News</h5>
-              <p>We help identify the best ways to improve your business</p>
-              <a href="#" class="text-dark fw-semibold text-decoration-none"
-                >Learn More <i class="fa fa-arrow-right ms-1"></i
-              ></a>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-6 col-lg-4 col-6">
+              <div
+                class="card border-0 shadow-sm rounded-4 overflow-hidden h-100"
+              >
+                <img
+                  src="assets/img/s6.webp"
+                  class="card-img-top"
+                  alt="Files"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">News</h5>
+                  <p class="card-text text-secondary">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <a
+                    href="#"
+                    class="text-warning fw-semibold text-decoration-none"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="py-5" style="background-color: #f8fcf9;">
-  <div class="container">
-    <div class="row text-center">
-      <!-- Stat 1 -->
-      <div class="col-md-3 mb-4 mb-md-0">
-        <img src="path/to/project-icon.svg" alt="Projects" width="50" class="mb-3">
-        <h6>Completed Projects</h6>
-        <h4 class="fw-bold text-warning mt-2">100 +</h4>
+    <section class="py-5" style="background-color: #f8fcf9">
+      <div class="container">
+        <div class="row text-center">
+          <!-- Stat 1 -->
+          <div class="col-md-3 col-6 mb-4 mb-md-0">
+            <img
+              src="assets/img/project.png"
+              alt="Projects"
+              width="50"
+              class="mb-3"
+            />
+            <h6>Completed Projects</h6>
+            <h4 class="fw-bold text-warning mt-2">100 +</h4>
+          </div>
+          <!-- Stat 2 -->
+          <div class="col-md-3 col-6 mb-4 mb-md-0 border-start border-end">
+            <img
+              src="assets/img/rating.png"
+              alt="Customer"
+              width="50"
+              class="mb-3"
+            />
+            <h6>Customer Satisfaction</h6>
+            <h4 class="fw-bold text-warning mt-2">20 %</h4>
+          </div>
+          <!-- Stat 3 -->
+          <div class="col-md-3 col-6 mb-4 mb-md-0 border-end">
+            <img
+              src="assets/img/raise.png"
+              alt="Raised"
+              width="50"
+              class="mb-3"
+            />
+            <h6>Raised by Clients</h6>
+            <h4 class="fw-bold text-warning mt-2">$10M</h4>
+          </div>
+          <!-- Stat 4 -->
+          <div class="col-md-3 col-6">
+            <img
+              src="assets/img/timeline.png"
+              alt="Years"
+              width="50"
+              class="mb-3"
+            />
+            <h6>Years in Business</h6>
+            <h4 class="fw-bold text-warning mt-2">2 yrs</h4>
+          </div>
+        </div>
       </div>
-      <!-- Stat 2 -->
-      <div class="col-md-3 mb-4 mb-md-0 border-start border-end">
-        <img src="path/to/customer-icon.svg" alt="Customer" width="50" class="mb-3">
-        <h6>Customer Satisfaction</h6>
-        <h4 class="fw-bold text-warning mt-2">20 %</h4>
+    </section>
+
+    <section class="blog-section py-5">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5">See Our Blog Post</h2>
+        <div class="row g-4">
+          <!-- Blog Card 1 -->
+          <div class="col-md-6 col-lg-6">
+            <div class="blog-card border-red">
+              <div class="row g-0">
+                <div class="col-5">
+                  <img
+                    src="assets/img/blog1.png"
+                    alt="Blog 1"
+                    class="img-fluid h-100 object-fit-cover rounded-start"
+                  />
+                </div>
+                <div class="col-7 p-3 d-flex align-items-center">
+                  <div>
+                    <small>19 Feb, 2022 / By Admin</small>
+                    <h5 class="fw-bold">Digital marketing Tips</h5>
+                    <p>
+                      Promotion World has once placed PageTraffic among the top.
+                    </p>
+                    <a
+                      href="#"
+                      class="text-danger text-decoration-none fw-medium"
+                      >Read more →</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Blog Card 2 -->
+          <div class="col-md-6 col-lg-6">
+            <div class="blog-card border-green">
+              <div class="row g-0">
+                <div class="col-5">
+                  <img
+                    src="assets/img/blog2.png"
+                    alt="Blog 2"
+                    class="img-fluid h-100 object-fit-cover rounded-start"
+                  />
+                </div>
+                <div class="col-7 p-3 d-flex align-items-center">
+                  <div>
+                    <small>09 Apr, 2022 / By Admin</small>
+                    <h5 class="fw-bold">Improve your UX/UI</h5>
+                    <p>
+                      Promotion World has once placed PageTraffic among the top.
+                    </p>
+                    <a
+                      href="#"
+                      class="text-success text-decoration-none fw-medium"
+                      >Read more →</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Blog Card 3 -->
+          <div class="col-md-6 col-lg-6">
+            <div class="blog-card border-green">
+              <div class="row g-0">
+                <div class="col-5">
+                  <img
+                    src="assets/img/blog3.png"
+                    alt="Blog 3"
+                    class="img-fluid h-100 object-fit-cover rounded-start"
+                  />
+                </div>
+                <div class="col-7 p-3 d-flex align-items-center">
+                  <div>
+                    <small>25 Jan, 2022 / By Admin</small>
+                    <h5 class="fw-bold">Meta Technology.</h5>
+                    <p>
+                      Promotion World has once placed PageTraffic among the top.
+                    </p>
+                    <a
+                      href="#"
+                      class="text-success text-decoration-none fw-medium"
+                      >Read more →</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Blog Card 4 -->
+          <div class="col-md-6 col-lg-6">
+            <div class="blog-card border-red">
+              <div class="row g-0">
+                <div class="col-5">
+                  <img
+                    src="assets/img/blog4.png"
+                    alt="Blog 4"
+                    class="img-fluid h-100 object-fit-cover rounded-start"
+                  />
+                </div>
+                <div class="col-7 p-3 d-flex align-items-center">
+                  <div>
+                    <small>13 Nov, 2022 / By Admin</small>
+                    <h5 class="fw-bold">PageTraffic Ranks</h5>
+                    <p>
+                      Promotion World has once placed PageTraffic among the top.
+                    </p>
+                    <a
+                      href="#"
+                      class="text-danger text-decoration-none fw-medium"
+                      >Read more →</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- Stat 3 -->
-      <div class="col-md-3 mb-4 mb-md-0 border-end">
-        <img src="path/to/money-icon.svg" alt="Raised" width="50" class="mb-3">
-        <h6>Raised by Clients</h6>
-        <h4 class="fw-bold text-warning mt-2">$10M</h4>
-      </div>
-      <!-- Stat 4 -->
-      <div class="col-md-3">
-        <img src="path/to/calendar-icon.svg" alt="Years" width="50" class="mb-3">
-        <h6>Years in Business</h6>
-        <h4 class="fw-bold text-warning mt-2">2 yrs</h4>
+    </section>
+
+    <div class="container py-5">
+      <div class="row justify-content-center g-4">
+        <!-- Vision Card -->
+        <div class="col-md-4">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front text-center p-4">
+                <img
+                  src="assets/img/value1.png"
+                  alt="Vision"
+                  class="mb-3"
+                  width="48"
+                  height="48"
+                />
+                <h5 class="text-white fw-bold">Our Vision</h5>
+              </div>
+              <div class="flip-card-back text-dark p-4">
+                <p>
+                  With our disciplined approach and perseverance, we help
+                  customers develop a long-lasting relationship with their
+                  audience.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mission Card -->
+        <div class="col-md-4">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front text-center p-4">
+                <img
+                  src="assets/img/value2.png"
+                  alt="Mission"
+                  class="mb-3"
+                  width="48"
+                  height="48"
+                />
+                <h5 class="text-white fw-bold">Our Mission</h5>
+              </div>
+              <div class="flip-card-back text-dark p-4">
+                <p>
+                  Our mission is to be a revolutionary digital marketing guide
+                  for your business, driven by a team of dedicated experts.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Values Card -->
+        <div class="col-md-4">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front text-center p-4">
+                <img
+                  src="assets/img/value3.png"
+                  alt="Values"
+                  class="mb-3"
+                  width="48"
+                  height="48"
+                />
+                <h5 class="text-white fw-bold">Our Values</h5>
+              </div>
+              <div class="flip-card-back text-dark p-4">
+                <p>
+                  There are 8 core values of Marketing Fundas that shape its
+                  culture and inspire the team to be ethical and dedicated.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
 
+    <section class="py-5 bg-white">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <div>
+            <span class="text-warning text-uppercase fw-bold small"
+              >Testimonials</span
+            >
+            <h2 class="fw-bold">See What Our Customer Say About Us</h2>
+          </div>
+          <!-- <div class="d-flex align-items-center gap-2">
+            <div
+              class="swiper-button-prev btn btn-outline-dark rounded-circle"
+            ></div>
+            <div
+              class="swiper-button-next btn btn-warning text-white rounded-circle"
+            ></div>
+          </div> -->
+        </div>
+
+        <div class="swiper testimonialSwiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <div class="card shadow-sm p-4 m-1 border-0">
+                <p>
+                  Thank you for your service. I am very pleased with the result.
+                  I have seen exponential growth in my business and it's all
+                  thanks to your amazing service.
+                </p>
+                <div class="d-flex align-items-center mt-4">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/1.jpg"
+                    class="rounded-circle me-3"
+                    width="48"
+                    height="48"
+                    alt="User"
+                  />
+                  <div>
+                    <h6 class="fw-bold mb-0">Emily Stones</h6>
+                    <small>CEO, Marketing Guru</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <div class="card shadow-sm p-4 m-1 border-0">
+                <p>
+                  Incredible support and a wonderful team. I’ve seen great
+                  progress since partnering with them. Totally recommend!
+                </p>
+                <div class="d-flex align-items-center mt-4">
+                  <img
+                    src="https://randomuser.me/api/portraits/men/2.jpg"
+                    class="rounded-circle me-3"
+                    width="48"
+                    height="48"
+                    alt="User"
+                  />
+                  <div>
+                    <h6 class="fw-bold mb-0">John Parker</h6>
+                    <small>Founder, CreativeLabs</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <div class="card shadow-sm p-4 m-1 border-0">
+                <p>
+                  Professional and reliable. Their work has made a huge
+                  difference in how we approach marketing today.
+                </p>
+                <div class="d-flex align-items-center mt-4">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/3.jpg"
+                    class="rounded-circle me-3"
+                    width="48"
+                    height="48"
+                    alt="User"
+                  />
+                  <div>
+                    <h6 class="fw-bold mb-0">Sarah Lin</h6>
+                    <small>CMO, TechStart</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+              <div class="card shadow-sm p-4 m-1 border-0">
+                <p>
+                  Professional and reliable. Their work has made a huge
+                  difference in how we approach marketing today.
+                </p>
+                <div class="d-flex align-items-center mt-4">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/3.jpg"
+                    class="rounded-circle me-3"
+                    width="48"
+                    height="48"
+                    alt="User"
+                  />
+                  <div>
+                    <h6 class="fw-bold mb-0">Sarah Lin</h6>
+                    <small>CMO, TechStart</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Add more .swiper-slide as needed -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-white">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Left Image -->
+          <div class="col-md-5 text-center mb-4 mb-md-0">
+            <div class="d-none d-lg-block">
+              <img
+                src="assets/img/faq.webp"
+                alt="FAQ"
+                class="img-fluid"
+                style="max-height: 400px"
+              />
+            </div>
+          </div>
+
+          <!-- Right Accordion -->
+          <div class="col-md-7">
+            <h2 class="fw-bold mb-4">Frequently Asked Questions</h2>
+
+            <div class="accordion" id="faqAccordion">
+              <!-- Item 1 -->
+              <div class="accordion-item border-0 mb-3 shadow-sm rounded">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed rounded"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq1"
+                  >
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                  </button>
+                </h2>
+                <div
+                  id="faq1"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diam nonumy eirmod.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="accordion-item border-0 mb-3 shadow-sm rounded">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed rounded"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq2"
+                  >
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                  </button>
+                </h2>
+                <div
+                  id="faq2"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diam nonumy eirmod.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="accordion-item border-0 mb-3 shadow-sm rounded">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button rounded"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq3"
+                    aria-expanded="true"
+                  >
+                    <span class="text-warning fw-bold"
+                      >Lorem ipsum dolor sit amet, consetetur sadipscing
+                      elitr</span
+                    >
+                  </button>
+                </h2>
+                <div
+                  id="faq3"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diam nonumy eirmod.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Collaboration Section -->
+    <section class="collaboration bg-warning mb-4">
+      <div class="container pt-4 pb-4">
+        <div class="row align-items-center">
+          <div class="col-md-6 mb-3 mb-md-0 d-flex align-items-center">
+            <img
+              src="assets/img/seenandsold.webp"
+              alt="Logo"
+              height="50"
+              class="me-3"
+            />
+            <div>
+              <h5 class="mb-1 fw-bold text-white">
+                Interested in Collaboration?
+              </h5>
+              <p class="mb-0 small text-white">
+                Challenge us! We want to work with you to create the really cool
+                stuff
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <form class="d-flex justify-content-center justify-content-md-end">
+              <input
+                type="email"
+                class="form-control w-50 me-2"
+                placeholder="Email Address"
+              />
+              <button class="btn btn-danger">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-warning text-dark pt-5 d-none d-lg-block">
+      <!-- Main Footer -->
+      <div class="container py-5">
+        <div class="row">
+          <!-- Left Column -->
+          <div class="col-md-4 mb-4 mb-md-0">
+            <img
+              src="assets/img/seenandsold.webp"
+              alt="Seen & Sold"
+              height="50"
+              class="mb-3"
+            />
+            <p>
+              Some footer text about the Agency. Just a little description to
+              help people understand you better
+            </p>
+            <div class="d-flex gap-3">
+              <a href="#" class="bg-white px-3 py-2 rounded-circle"
+                ><i class="fab fa-facebook-f text-warning"></i
+              ></a>
+              <a href="#" class="bg-white px-3 py-2 rounded-circle"
+                ><i class="fab fa-twitter text-warning"></i
+              ></a>
+              <a href="#" class="bg-white px-3 py-2 rounded-circle"
+                ><i class="fab fa-linkedin-in text-warning"></i
+              ></a>
+              <a href="#" class="bg-white px-3 py-2 rounded-circle"
+                ><i class="fab fa-instagram text-warning"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Middle Column -->
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h6 class="fw-bold">Quick Links</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-dark text-decoration-none">Services</a>
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none">Portfolio</a>
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none">About Us</a>
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right Column -->
+          <div class="col-md-4">
+            <h6 class="fw-bold">Address</h6>
+            <p class="mb-0">Design Agency Head Office.</p>
+            <p class="mb-0">Airport Road</p>
+            <p>United Arab Emirates</p>
+          </div>
+        </div>
+
+        <hr class="my-4" />
+
+        <!-- Bottom Footer -->
+        <div class="d-flex justify-content-center align-items-center">
+          <small class="text-dark"
+            ><a href="#" class="text-decoration-none text-dark"
+              >Terms and conditions
+            </a>
+            |
+          </small>
+          <small class="text-dark"
+            ><a href="#" class="text-decoration-none text-dark">
+              &nbsp;Privacy policy</a
+            ></small
+          >
+        </div>
+      </div>
+    </footer>
+
+    <footer
+      class="mobile-footer d-md-none fixed-bottom bg-white shadow-lg rounded-top-4 px-4 py-3"
+    >
+      <div
+        class="d-flex justify-content-between text-center align-items-center"
+      >
+        <!-- Home -->
+        <div class="flex-fill">
+          <i class="fa fa-house text-warning fs-4 d-block"></i>
+          <small class="text-warning">Home</small>
+        </div>
+
+        <!-- Consult Now -->
+        <div class="flex-fill" style="margin-top: -30px">
+          <div
+            class="bg-light rounded-circle mx-auto mb-1 d-flex align-items-center justify-content-center"
+            style="width: 40px; height: 40px"
+          >
+            <i class="fa fa-plus fs-5 text-secondary d-block mt-1"></i>
+          </div>
+          <small class="text-secondary">Consult Now</small>
+        </div>
+
+        <!-- Profile -->
+        <div class="flex-fill">
+          <i class="fa fa-user text-secondary fs-4 d-block"></i>
+          <small class="text-secondary">Profile</small>
+        </div>
+      </div>
+
+      <!-- Drag Handle -->
+      <div class="text-center mt-2">
+        <div
+          style="width: 120px; height: 5px"
+          class="bg-secondary bg-opacity-25 rounded-pill mx-auto"
+        ></div>
+      </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".testimonialSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+          },
+          992: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
   </body>
 </html>

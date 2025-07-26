@@ -53,7 +53,9 @@
           <a class="nav-link fs-5 px-4 fw-bold" href="#">How it Works</a>
           <a class="nav-link fs-5 px-4 fw-bold" href="#">About</a>
           <a class="nav-link fs-5 px-4 fw-bold" href="#">Contact Us</a>
-          <a class="btn btn-yellow btn-sm fs-5 ms-3" href="consult-now.html">Consult now</a>
+          <a class="btn btn-yellow btn-sm fs-5 ms-3" href="consult-now.html"
+            >Consult now</a
+          >
           <a class="btn btn-outline-secondary btn-sm fs-5 ms-2" href="#"
             >Sign in</a
           >
@@ -83,10 +85,16 @@
         <a href="index.html"><i class="fa fa-home"></i> Home</a>
         <a href="#"><i class="fa fa-user"></i> My Profile</a>
         <a href="#"><i class="fa fa-briefcase"></i> Services</a>
-        <a href="consult-now.html"><i class="fa fa-calendar"></i> My Appointment</a>
+        <a href="consult-now.html"
+          ><i class="fa fa-calendar"></i> My Appointment</a
+        >
         <a href="#"><i class="fa fa-info-circle"></i> About</a>
-        <a href="terms-and-conditions.html"><i class="fa fa-file"></i> Term & Conditions</a>
-        <a href="privacy-policy.html"><i class="fa fa-lock"></i> Privacy Policy</a>
+        <a href="terms-and-conditions.html"
+          ><i class="fa fa-file"></i> Term & Conditions</a
+        >
+        <a href="privacy-policy.html"
+          ><i class="fa fa-lock"></i> Privacy Policy</a
+        >
         <a href="#"><i class="fa fa-bullseye"></i> Our Mission</a>
         <a href="#"><i class="fa fa-comments"></i> Contact Us</a>
         <a href="#"><i class="fa fa-question-circle"></i> Help & Support</a>
@@ -113,6 +121,7 @@
                       type="text"
                       class="form-control rounded-3"
                       id="fullName"
+                      name="fullName"
                       placeholder="Enter Your Full Name"
                       required
                     />
@@ -127,6 +136,7 @@
                       type="text"
                       class="form-control rounded-3"
                       id="phoneName"
+                      name="phoneName"
                       placeholder="Enter Your Number"
                       required
                     />
@@ -141,7 +151,9 @@
                       type="text"
                       class="form-control rounded-3"
                       id="businessName"
+                      name="businessName"
                       placeholder="Enter Your Business Name / Brand Name"
+                      required
                     />
                   </div>
                 </div>
@@ -154,7 +166,9 @@
                       type="text"
                       class="form-control rounded-3"
                       id="website"
+                      name="website"
                       placeholder="Enter Your Website / Instagram / Other"
+                      required
                     />
                   </div>
                 </div>
@@ -183,6 +197,7 @@
                         class="form-check-input"
                         type="checkbox"
                         id="ideaStage"
+                        name="idea_stage"
                         checked
                       />
                       <label class="form-check-label" for="ideaStage"
@@ -196,6 +211,7 @@
                         class="form-check-input"
                         type="checkbox"
                         id="sixMonths"
+                        name="six_months"
                       />
                       <label class="form-check-label" for="sixMonths"
                         >6 months to 1 year in</label
@@ -208,6 +224,7 @@
                         class="form-check-input"
                         type="checkbox"
                         id="justLaunched"
+                        name="just_launched"
                       />
                       <label class="form-check-label" for="justLaunched"
                         >Just launched</label
@@ -220,6 +237,7 @@
                         class="form-check-input"
                         type="checkbox"
                         id="established"
+                        name="established"
                       />
                       <label class="form-check-label" for="established"
                         >Established, looking to scale</label
@@ -826,21 +844,21 @@
         <!-- Home -->
         <div class="flex-fill">
           <a href="index.html" class="text-decoration-none">
-          <i class="fa fa-house text-warning fs-4 d-block"></i>
-          <small class="text-warning">Home</small>
+            <i class="fa fa-house text-warning fs-4 d-block"></i>
+            <small class="text-warning">Home</small>
           </a>
         </div>
 
         <!-- Consult Now -->
         <div class="flex-fill" style="margin-top: -30px">
           <a href="consult-now.html" class="text-decoration-none">
-          <div
-            class="bg-light rounded-circle mx-auto mb-1 d-flex align-items-center justify-content-center"
-            style="width: 40px; height: 40px"
-          >
-            <i class="fa fa-plus fs-5 text-secondary d-block mt-1"></i>
-          </div>
-          <small class="text-secondary">Consult Now</small>
+            <div
+              class="bg-light rounded-circle mx-auto mb-1 d-flex align-items-center justify-content-center"
+              style="width: 40px; height: 40px"
+            >
+              <i class="fa fa-plus fs-5 text-secondary d-block mt-1"></i>
+            </div>
+            <small class="text-secondary">Consult Now</small>
           </a>
         </div>
 
@@ -876,14 +894,39 @@
       }
 
       // Optional: Handle form submit
-      document
-        .getElementById("consultForm")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
-          alert("Form submitted!");
-          this.reset();
-          nextStep(1);
-        });
+      const form = document.querySelector("form");
+      const submitBtn = form.querySelector("button[type='submit']");
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        // Disable the button to prevent multiple clicks
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Submitting...";
+
+        const formData = new FormData(form);
+        const url =
+          "https://script.google.com/macros/s/AKfycbxhujKYzvTrqQ3DCI3PVXrbhQjAuqBAialWrYEzyfuP91yX4KasIhx3IoiEeam7zfo/exec";
+
+        fetch(url, {
+          method: "POST",
+          body: new URLSearchParams(formData),
+        })
+          .then((response) => response.text())
+          .then((data) => {
+            alert("Form submitted successfully!");
+            form.reset();
+            this.reset();
+            nextStep(1);
+          })
+          .catch((error) => {
+            console.error("Error!", error.message);
+          })
+          .finally(() => {
+            // Re-enable the button after success or failure
+            submitBtn.disabled = false;
+            submitBtn.textContent = "Submit";
+          });
+      });
     </script>
   </body>
 </html>

@@ -640,21 +640,20 @@
                         <a href="faqs.php" class="text-dark text-decoration-none">Help & Support</a>
                     </li>
                     <li>
-                        <a href="about.php" class="text-dark text-decoration-none">About Us</a>
+                        <a href="about-us.php" class="text-dark text-decoration-none">About Us</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0);" data-bs-toggle="modal"
-                            data-bs-target="#largeModal" class="text-dark text-decoration-none">Contact Us</a>
+                        <a href="contact-us.php" class="text-dark text-decoration-none">Contact Us</a>
                     </li>
                 </ul>
             </div>
 
             <!-- Right Column -->
             <div class="col-md-4">
-                <h6 class="fw-bold">Address</h6>
-                <p class="mb-0">Office No. IX/6066,</p>
-                <p class="mb-0">Gandhi Nagar,</p>
-                <p>Delhi 110031</p>
+                <h6 class="fw-bold">Address: </h6>
+                <p class="mb-0">IX/6066, 9th Floor Arunachal Building,</p>
+                <p class="mb-0">Barakhamba Rd, Connaught Lane, Barakhamba,</p>
+                <p>New Delhi, Delhi 110001</p>
             </div>
         </div>
 
@@ -754,6 +753,60 @@
             },
             992: {
                 slidesPerView: 5
+            }
+        }
+    });
+
+    const serviceSwiper = new Swiper(".serviceSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+        },
+        breakpoints: {
+            300: {
+                slidesPerView: 2
+            },
+            480: {
+                slidesPerView: 2
+            },
+            576: {
+                slidesPerView: 3
+            },
+            768: {
+                slidesPerView: 4
+            },
+            992: {
+                slidesPerView: 5
+            }
+        }
+    });
+
+    const valueSwiper = new Swiper(".valueSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+        },
+        breakpoints: {
+            300: {
+                slidesPerView: 1
+            },
+            480: {
+                slidesPerView: 1
+            },
+            576: {
+                slidesPerView: 1
+            },
+            768: {
+                slidesPerView: 3
+            },
+            992: {
+                slidesPerView: 3
             }
         }
     });

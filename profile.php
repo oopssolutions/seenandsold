@@ -228,14 +228,6 @@
         <span class="text-warning text-uppercase fw-bold small">Reviews</span>
         <h2 class="fw-bold">See What Our Customer Say About Us</h2>
       </div>
-      <!-- <div class="d-flex align-items-center gap-2">
-            <div
-              class="swiper-button-prev btn btn-outline-dark rounded-circle"
-            ></div>
-            <div
-              class="swiper-button-next btn btn-warning text-white rounded-circle"
-            ></div>
-          </div> -->
     </div>
 
     <div class="swiper testimonialSwiper">

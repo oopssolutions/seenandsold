@@ -3,9 +3,9 @@
 <!-- Hero Section -->
 <section class="hero">
   <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-6 col-md-6 com-sm-6 col-6">
-        <h1>Turn Attention into Sales — With Influencer-Led Video Commerce & Viral Campaigns</h1>
+    <div class="row align-items-center flex-column-reverse flex-md-row">
+      <div class="col-lg-6 col-md-6 com-sm-12 col-12 mt-4 mt-lg-0 text-md-start text-center">
+        <h1 class="">Turn Attention into Sales — With Influencer-Led Video Commerce & Viral Campaigns</h1>
         <p class="my-3">
           Get your brand SEEN by the right audience and SOLD to the right buyer.
         </p>
@@ -18,10 +18,10 @@
           Book a Strategy Call
         </button>
         <!-- <a href="consult-now.html" class="btn btn-yellow px-4 py-2 mt-2">Consult now</a> -->
-        
+
       </div>
       <div
-        class="col-lg-6 col-md-6 com-sm-6 col-6 text-center mt-4 mt-lg-0">
+        class="col-lg-6 col-md-6 com-sm-12 col-12 text-center">
         <img
           src="assets/img/hero.webp"
           alt="Hero Image"
@@ -29,10 +29,10 @@
       </div>
     </div>
   </div>
-</section>
 
+</section>
 <!-- Brand Logos -->
-<div class="py-4 bg-white border-top border-bottom">
+<div class="py-3 bg-white border-top border-bottom">
   <div class="container text-center brand-logos">
     <div class="swiper brandSwiper">
       <div class="swiper-wrapper">
@@ -83,26 +83,8 @@
 
       </div>
     </div>
-    <!-- <div class="row align-items-center justify-content-center g-3">
-      <div class="col-lg-2 col-md-2 com-sm-4 col-4">
-        <img src="assets/img/google.webp" class="px-2" alt="Google" />
-      </div>
-      <div class="col-lg-2 col-md-2 com-sm-4 col-4">
-        <img src="assets/img/trello.webp" class="px-2" alt="Trello" />
-      </div>
-      <div class="col-lg-2 col-md-2 com-sm-4 col-4">
-        <img src="assets/img/monday.webp" class="px-2" alt="Monday" />
-      </div>
-      <div class="col-lg-2 col-md-2 com-sm-4 col-4">
-        <img src="assets/img/Notion.webp" class="px-2" alt="Notion" />
-      </div>
-      <div class="col-lg-2 col-md-2 com-sm-4 col-4">
-        <img src="assets/img/slack.webp" class="px-2" alt="Slack" />
-      </div>
-    </div> -->
   </div>
 </div>
-
 <!-- Services Section (What We Do) -->
 <section class="py-5" id="services">
   <div class="container">
@@ -182,122 +164,124 @@
     </div>
 
     <div class="d-lg-none">
-      <div class="row g-4">
-        <!-- Card 1 -->
-        <div class="col-md-6 col-lg-4 col-6">
-          <div
-            class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
-            <img
-              src="assets/img/s1.webp"
-              class="card-img-top"
-              alt="System" />
-            <div class="card-body">
-              <h5 class="card-title fw-bold">System</h5>
-              <p class="card-text text-secondary">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-              <a
-                href="#"
-                class="text-warning fw-semibold text-decoration-none">Learn More</a>
+      <div class="swiper serviceSwiper">
+        <div class="swiper-wrapper">
+          <!-- Card 1 -->
+          <div class="swiper-slide">
+            <div
+              class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+              <img
+                src="assets/img/s1.webp"
+                class="card-img-top"
+                alt="System" />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">System</h5>
+                <p class="card-text text-secondary">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <a
+                  href="#"
+                  class="text-warning fw-semibold text-decoration-none">Learn More</a>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Card 2 -->
-        <div class="col-md-6 col-lg-4 col-6">
-          <div
-            class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
-            <img
-              src="assets/img/s2.webp"
-              class="card-img-top"
-              alt="Files" />
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Files</h5>
-              <p class="card-text text-secondary">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-              <a
-                href="#"
-                class="text-warning fw-semibold text-decoration-none">Learn More</a>
+          <!-- Card 2 -->
+          <div class="swiper-slide">
+            <div
+              class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+              <img
+                src="assets/img/s2.webp"
+                class="card-img-top"
+                alt="Files" />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Files</h5>
+                <p class="card-text text-secondary">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <a
+                  href="#"
+                  class="text-warning fw-semibold text-decoration-none">Learn More</a>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Card 3 -->
-        <div class="col-md-6 col-lg-4 col-6">
-          <div
-            class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
-            <img
-              src="assets/img/s3.webp"
-              class="card-img-top"
-              alt="Files" />
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Communication</h5>
-              <p class="card-text text-secondary">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-              <a
-                href="#"
-                class="text-warning fw-semibold text-decoration-none">Learn More</a>
+          <!-- Card 3 -->
+          <div class="swiper-slide">
+            <div
+              class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+              <img
+                src="assets/img/s3.webp"
+                class="card-img-top"
+                alt="Files" />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Communication</h5>
+                <p class="card-text text-secondary">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <a
+                  href="#"
+                  class="text-warning fw-semibold text-decoration-none">Learn More</a>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Card 4 -->
-        <div class="col-md-6 col-lg-4 col-6">
-          <div
-            class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
-            <img
-              src="assets/img/s4.webp"
-              class="card-img-top"
-              alt="Files" />
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Marketing</h5>
-              <p class="card-text text-secondary">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-              <a
-                href="#"
-                class="text-warning fw-semibold text-decoration-none">Learn More</a>
+          <!-- Card 4 -->
+          <div class="swiper-slide">
+            <div
+              class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+              <img
+                src="assets/img/s4.webp"
+                class="card-img-top"
+                alt="Files" />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Marketing</h5>
+                <p class="card-text text-secondary">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <a
+                  href="#"
+                  class="text-warning fw-semibold text-decoration-none">Learn More</a>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Card 5 -->
-        <div class="col-md-6 col-lg-4 col-6">
-          <div
-            class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
-            <img
-              src="assets/img/s5.webp"
-              class="card-img-top"
-              alt="Files" />
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Courses</h5>
-              <p class="card-text text-secondary">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-              <a
-                href="#"
-                class="text-warning fw-semibold text-decoration-none">Learn More</a>
+          <!-- Card 5 -->
+          <div class="swiper-slide">
+            <div
+              class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+              <img
+                src="assets/img/s5.webp"
+                class="card-img-top"
+                alt="Files" />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Courses</h5>
+                <p class="card-text text-secondary">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <a
+                  href="#"
+                  class="text-warning fw-semibold text-decoration-none">Learn More</a>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Card 6 -->
-        <div class="col-md-6 col-lg-4 col-6">
-          <div
-            class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
-            <img
-              src="assets/img/s6.webp"
-              class="card-img-top"
-              alt="Files" />
-            <div class="card-body">
-              <h5 class="card-title fw-bold">News</h5>
-              <p class="card-text text-secondary">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-              <a
-                href="#"
-                class="text-warning fw-semibold text-decoration-none">Learn More</a>
+          <!-- Card 6 -->
+          <div class="swiper-slide">
+            <div
+              class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+              <img
+                src="assets/img/s6.webp"
+                class="card-img-top"
+                alt="Files" />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">News</h5>
+                <p class="card-text text-secondary">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <a
+                  href="#"
+                  class="text-warning fw-semibold text-decoration-none">Learn More</a>
+              </div>
             </div>
           </div>
         </div>
@@ -464,79 +448,7 @@
   </div>
 </section>
 
-<div class="container py-5">
-  <div class="row justify-content-center g-4">
-    <!-- Vision Card -->
-    <div class="col-md-4">
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front text-center p-4">
-            <img
-              src="assets/img/value1.png"
-              alt="Vision"
-              class="mb-3"
-              width="48"
-              height="48" />
-            <h5 class="text-white fw-bold">Our Vision</h5>
-          </div>
-          <div class="flip-card-back text-dark p-4">
-            <p>
-              With our disciplined approach and perseverance, we help
-              customers develop a long-lasting relationship with their
-              audience.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Mission Card -->
-    <div class="col-md-4">
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front text-center p-4">
-            <img
-              src="assets/img/value2.png"
-              alt="Mission"
-              class="mb-3"
-              width="48"
-              height="48" />
-            <h5 class="text-white fw-bold">Our Mission</h5>
-          </div>
-          <div class="flip-card-back text-dark p-4">
-            <p>
-              Our mission is to be a revolutionary digital marketing guide
-              for your business, driven by a team of dedicated experts.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Values Card -->
-    <div class="col-md-4">
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front text-center p-4">
-            <img
-              src="assets/img/value3.png"
-              alt="Values"
-              class="mb-3"
-              width="48"
-              height="48" />
-            <h5 class="text-white fw-bold">Our Values</h5>
-          </div>
-          <div class="flip-card-back text-dark p-4">
-            <p>
-              There are 8 core values of Marketing Fundas that shape its
-              culture and inspire the team to be ethical and dedicated.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<?php include 'includes/value.php' ?>
 
 <section class="py-5 bg-white">
   <div class="container">
@@ -652,96 +564,6 @@
   </div>
 </section>
 
-<section class="py-5 bg-white">
-  <div class="container">
-    <div class="row align-items-center">
-      <!-- Left Image -->
-      <div class="col-md-5 text-center mb-4 mb-md-0">
-        <div class="d-none d-lg-block">
-          <img
-            src="assets/img/faq.webp"
-            alt="FAQ"
-            class="img-fluid"
-            style="max-height: 400px" />
-        </div>
-      </div>
-
-      <!-- Right Accordion -->
-      <div class="col-md-7">
-        <h2 class="fw-bold mb-4">Frequently Asked Questions</h2>
-
-        <div class="accordion" id="faqAccordion">
-          <!-- Item 1 -->
-          <div class="accordion-item border-0 mb-3 shadow-sm rounded">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed rounded"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faq1">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr
-              </button>
-            </h2>
-            <div
-              id="faq1"
-              class="accordion-collapse collapse"
-              data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod.
-              </div>
-            </div>
-          </div>
-
-          <!-- Item 2 -->
-          <div class="accordion-item border-0 mb-3 shadow-sm rounded">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed rounded"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faq2">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr
-              </button>
-            </h2>
-            <div
-              id="faq2"
-              class="accordion-collapse collapse"
-              data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod.
-              </div>
-            </div>
-          </div>
-
-          <!-- Item 3 -->
-          <div class="accordion-item border-0 mb-3 shadow-sm rounded">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button rounded"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faq3"
-                aria-expanded="true">
-                <span class="text-warning fw-bold">Lorem ipsum dolor sit amet, consetetur sadipscing
-                  elitr</span>
-              </button>
-            </h2>
-            <div
-              id="faq3"
-              class="accordion-collapse collapse show"
-              data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<?php include 'includes/faq.php'; ?>
 
 <?php include 'includes/footer.php'; ?>

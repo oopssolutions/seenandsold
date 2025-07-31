@@ -110,7 +110,7 @@
         <p class="text-muted">
           Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy eirmod tempor Lorem ipsum dolor sit amet consectetur sadipscing elitr
         </p>
-        <a href="#contact" class="btn btn-danger px-4 py-2 mb-4">Contact us</a>
+        <a href="contact-us.php" class="btn btn-danger px-4 py-2 mb-4">Contact us</a>
       </div>
     </div>
 
@@ -143,7 +143,8 @@
         <p class="mb-4">
           Get in touch with us to learn how you can be a part of the Thrive family!
         </p>
-        <a href="#contact" class="btn btn-warning text-dark fw-bold shadow-sm rounded-pill px-4 py-2">
+        <a href="javascript:void(0);" data-bs-toggle="modal"
+          data-bs-target="#largeModal" class="btn btn-warning text-dark fw-bold shadow-sm rounded-pill px-4 py-2">
           Let’s Talk →
         </a>
       </div>

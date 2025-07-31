@@ -102,7 +102,8 @@
             </div>
             <h5 class="fw-bold">System</h5>
             <p>We help identify the best ways to improve your business</p>
-            <a href="#" class="text-dark fw-semibold text-decoration-none">Learn More <i class="fa fa-arrow-right ms-1"></i></a>
+            <a href="javascript:void(0);" data-bs-toggle="modal"
+              data-bs-target="#largeModal" class="text-dark fw-semibold text-decoration-none">Learn More <i class="fa fa-arrow-right ms-1"></i></a>
           </div>
         </div>
         <!-- Card Item -->
@@ -113,7 +114,8 @@
             </div>
             <h5 class="fw-bold">Files</h5>
             <p>We help identify the best ways to improve your business</p>
-            <a href="#" class="text-dark fw-semibold text-decoration-none">Learn More <i class="fa fa-arrow-right ms-1"></i></a>
+            <a href="javascript:void(0);" data-bs-toggle="modal"
+              data-bs-target="#largeModal" class="text-dark fw-semibold text-decoration-none">Learn More <i class="fa fa-arrow-right ms-1"></i></a>
           </div>
         </div>
         <!-- Card Item -->
@@ -124,7 +126,8 @@
             </div>
             <h5 class="fw-bold">Marketing</h5>
             <p>We help identify the best ways to improve your business</p>
-            <a href="#" class="text-dark fw-semibold text-decoration-none">Learn More <i class="fa fa-arrow-right ms-1"></i></a>
+            <a href="javascript:void(0);" data-bs-toggle="modal"
+              data-bs-target="#largeModal" class="text-dark fw-semibold text-decoration-none">Learn More <i class="fa fa-arrow-right ms-1"></i></a>
           </div>
         </div>
         <!-- Card Item -->
@@ -135,7 +138,8 @@
             </div>
             <h5 class="fw-bold">Courses</h5>
             <p>We help identify the best ways to improve your business</p>
-            <a href="#" class="text-dark fw-semibold text-decoration-none">Learn More <i class="fa fa-arrow-right ms-1"></i></a>
+            <a href="javascript:void(0);" data-bs-toggle="modal"
+              data-bs-target="#largeModal" class="text-dark fw-semibold text-decoration-none">Learn More <i class="fa fa-arrow-right ms-1"></i></a>
           </div>
         </div>
         <!-- Card Item -->
@@ -146,7 +150,8 @@
             </div>
             <h5 class="fw-bold">Communication</h5>
             <p>We help identify the best ways to improve your business</p>
-            <a href="#" class="text-dark fw-semibold text-decoration-none">Learn More <i class="fa fa-arrow-right ms-1"></i></a>
+            <a href="javascript:void(0);" data-bs-toggle="modal"
+              data-bs-target="#largeModal" class="text-dark fw-semibold text-decoration-none">Learn More <i class="fa fa-arrow-right ms-1"></i></a>
           </div>
         </div>
         <!-- Card Item -->
@@ -157,7 +162,8 @@
             </div>
             <h5 class="fw-bold">News</h5>
             <p>We help identify the best ways to improve your business</p>
-            <a href="#" class="text-dark fw-semibold text-decoration-none">Learn More <i class="fa fa-arrow-right ms-1"></i></a>
+            <a href="javascript:void(0);" data-bs-toggle="modal"
+              data-bs-target="#largeModal" class="text-dark fw-semibold text-decoration-none">Learn More <i class="fa fa-arrow-right ms-1"></i></a>
           </div>
         </div>
       </div>
@@ -180,7 +186,8 @@
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
                 <a
-                  href="#"
+                  href="javascript:void(0);" data-bs-toggle="modal"
+                  data-bs-target="#largeModal"
                   class="text-warning fw-semibold text-decoration-none">Learn More</a>
               </div>
             </div>
@@ -200,7 +207,8 @@
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
                 <a
-                  href="#"
+                  href="javascript:void(0);" data-bs-toggle="modal"
+                  data-bs-target="#largeModal"
                   class="text-warning fw-semibold text-decoration-none">Learn More</a>
               </div>
             </div>
@@ -220,7 +228,8 @@
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
                 <a
-                  href="#"
+                  href="javascript:void(0);" data-bs-toggle="modal"
+                  data-bs-target="#largeModal"
                   class="text-warning fw-semibold text-decoration-none">Learn More</a>
               </div>
             </div>
@@ -239,7 +248,8 @@
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
                 <a
-                  href="#"
+                  href="javascript:void(0);" data-bs-toggle="modal"
+                  data-bs-target="#largeModal"
                   class="text-warning fw-semibold text-decoration-none">Learn More</a>
               </div>
             </div>
@@ -259,7 +269,8 @@
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
                 <a
-                  href="#"
+                  href="javascript:void(0);" data-bs-toggle="modal"
+                  data-bs-target="#largeModal"
                   class="text-warning fw-semibold text-decoration-none">Learn More</a>
               </div>
             </div>
@@ -279,7 +290,8 @@
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
                 <a
-                  href="#"
+                  href="javascript:void(0);" data-bs-toggle="modal"
+                  data-bs-target="#largeModal"
                   class="text-warning fw-semibold text-decoration-none">Learn More</a>
               </div>
             </div>
@@ -359,7 +371,8 @@
                   Promotion World has once placed PageTraffic among the top.
                 </p>
                 <a
-                  href="#"
+                  href="javascript:void(0);" data-bs-toggle="modal"
+                  data-bs-target="#largeModal"
                   class="text-danger text-decoration-none fw-medium">Read more →</a>
               </div>
             </div>
@@ -385,7 +398,8 @@
                   Promotion World has once placed PageTraffic among the top.
                 </p>
                 <a
-                  href="#"
+                  href="javascript:void(0);" data-bs-toggle="modal"
+                  data-bs-target="#largeModal"
                   class="text-success text-decoration-none fw-medium">Read more →</a>
               </div>
             </div>
@@ -411,7 +425,8 @@
                   Promotion World has once placed PageTraffic among the top.
                 </p>
                 <a
-                  href="#"
+                  href="javascript:void(0);" data-bs-toggle="modal"
+                  data-bs-target="#largeModal"
                   class="text-success text-decoration-none fw-medium">Read more →</a>
               </div>
             </div>
@@ -437,7 +452,8 @@
                   Promotion World has once placed PageTraffic among the top.
                 </p>
                 <a
-                  href="#"
+                  href="javascript:void(0);" data-bs-toggle="modal"
+                  data-bs-target="#largeModal"
                   class="text-danger text-decoration-none fw-medium">Read more →</a>
               </div>
             </div>

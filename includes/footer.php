@@ -545,6 +545,11 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="g-recaptcha my-3" data-sitekey="6LcyAZYrAAAAAFtJwBBfCJC_9wBsA1GAo5kacCU6"></div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="d-flex justify-content-between">
                                     <button
@@ -555,6 +560,7 @@
                                     </button>
                                     <button
                                         type="submit"
+                                        id="consultBtnForm"
                                         class="btn btn-success text-white rounded-pill px-4">
                                         Submit <i class="fa fa-arrow-right"></i>
                                     </button>
@@ -618,8 +624,8 @@
                         class="mb-3" />
                 </a>
                 <p>
-                    Some footer text about the Agency. Just a little description to
-                    help people understand you better
+                    Seen & Sold is your go-to performance-driven agency for product marketing, influencer partnerships, video commerce, and viral content creation. We help brands get seen, remembered, and sold.
+
                 </p>
                 <div class="d-flex gap-3">
                     <a href="#" class="bg-white px-3 py-2 rounded-circle"><i class="fab fa-facebook-f text-warning"></i></a>
@@ -634,7 +640,7 @@
                 <h6 class="fw-bold">Quick Links</h6>
                 <ul class="list-unstyled">
                     <li>
-                        <a href="index.php#services" class="text-dark text-decoration-none">Services</a>
+                        <a href="services.php" class="text-dark text-decoration-none">Services</a>
                     </li>
                     <li>
                         <a href="faqs.php" class="text-dark text-decoration-none">Help & Support</a>
@@ -651,9 +657,9 @@
             <!-- Right Column -->
             <div class="col-md-4">
                 <h6 class="fw-bold">Address: </h6>
-                <p class="mb-0">IX/6066, 9th Floor Arunachal Building,</p>
-                <p class="mb-0">Barakhamba Rd, Connaught Lane, Barakhamba,</p>
-                <p>New Delhi, Delhi 110001</p>
+                <p class="mb-0">IX/6066 KASHYAP GALI,</p>
+                <p class="mb-0">GANDHI NAGAR, East Delhi,</p>
+                <p>Delhi, 110031, India</p>
             </div>
         </div>
 
@@ -689,7 +695,8 @@
 
         <!-- Consult Now -->
         <div class="flex-fill" style="margin-top: -30px">
-            <a href="consult-now.php" class="text-decoration-none">
+            <a href="javascript:void(0)" data-bs-toggle="modal"
+                data-bs-target="#largeModal" class="text-decoration-none">
                 <div
                     class="bg-light rounded-circle mx-auto mb-1 d-flex align-items-center justify-content-center"
                     style="width: 40px; height: 40px">
@@ -701,8 +708,10 @@
 
         <!-- Profile -->
         <div class="flex-fill">
-            <i class="fa fa-user text-secondary fs-4 d-block"></i>
-            <small class="text-secondary">Profile</small>
+            <a href="profile.php" class="text-decoration-none">
+                <i class="fa fa-user text-secondary fs-4 d-block"></i>
+                <small class="text-secondary">Profile</small>
+            </a>
         </div>
     </div>
 </footer>
@@ -711,6 +720,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 <script>
     const testimonialSwiper = new Swiper(".testimonialSwiper", {
         slidesPerView: 1,
@@ -831,17 +842,17 @@
         });
     }
 
-    // Optional: Handle form submit
-    const form = document.querySelector("form");
-    const submitBtn = form.querySelector("button[type='submit']");
-    form.addEventListener("submit", function(e) {
+    // Optional: Handle consult form submit
+    const consultForm = document.querySelector("#consultForm");
+    const consultSubmitBtn = consultForm.querySelector("#consultBtnForm");
+    consultForm.addEventListener("submit", function(e) {
         e.preventDefault();
 
         // Disable the button to prevent multiple clicks
-        submitBtn.disabled = true;
-        submitBtn.textContent = "Submitting...";
+        consultSubmitBtn.disabled = true;
+        consultSubmitBtn.textContent = "Submitting...";
 
-        const formData = new FormData(form);
+        const formData = new FormData(consultForm);
         const url =
             "https://script.google.com/macros/s/AKfycbxhujKYzvTrqQ3DCI3PVXrbhQjAuqBAialWrYEzyfuP91yX4KasIhx3IoiEeam7zfo/exec";
 
@@ -852,7 +863,7 @@
             .then((response) => response.text())
             .then((data) => {
                 alert("Form submitted successfully!");
-                form.reset();
+                consultForm.reset();
                 this.reset();
                 nextStep(1);
             })
@@ -861,8 +872,53 @@
             })
             .finally(() => {
                 // Re-enable the button after success or failure
-                submitBtn.disabled = false;
-                submitBtn.textContent = "Submit";
+                consultSubmitBtn.disabled = false;
+                consultSubmitBtn.textContent = "Submit";
+            });
+    });
+
+
+    // Optional: Handle consult form submit
+    const contactForm = document.querySelector("#contactForm");
+    const contactSubmitBtn = contactForm.querySelector("#contactBtnForm");
+    contactForm.addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        const recaptchaResponse = grecaptcha.getResponse();
+        if (!recaptchaResponse) {
+            alert("Please complete the reCAPTCHA.");
+            return;
+        }
+
+        // Disable the button to prevent multiple clicks
+        contactSubmitBtn.disabled = true;
+        contactSubmitBtn.textContent = "Sending...";
+
+        const formData = new FormData(contactForm);
+
+        formData.append("g-recaptcha-response", recaptchaResponse);
+
+        const url =
+            "https://script.google.com/macros/s/AKfycbxIj17vNvBXlQ3pFx7K0nf7nV8CtuFB4A6uFSrQHb3DrKojnkJIFjtNs7u0XriVThw/exec";
+
+        fetch(url, {
+                method: "POST",
+                body: new URLSearchParams(formData),
+            })
+            .then((response) => response.text())
+            .then((data) => {
+                alert("Form submitted successfully!");
+                contactForm.reset();
+                this.reset();
+                nextStep(1);
+            })
+            .catch((error) => {
+                console.error("Error!", error.message);
+            })
+            .finally(() => {
+                // Re-enable the button after success or failure
+                contactSubmitBtn.disabled = false;
+                contactSubmitBtn.textContent = "Send Message";
             });
     });
 </script>

@@ -6,11 +6,12 @@
       <!-- Text Content -->
       <div class="col-md-6 mb-4 mb-md-0">
         <h2 class="fw-bold">
-          We’d Love to Talk about How We Can<br>
-          <span class="text-warning">Work Together</span>
+          Have questions? Ready to scale your business online? We’re just a <span class="text-warning">message</span> away.<br>
+
         </h2>
         <p class="mt-3 text-muted">
-          Lorem ipsum dolor sit amet consectetur. Sem ultricies enim mauris ac id. Semper diam enim non eget augue morbi adipiscing condimentum. Tempor sollicitudin volutpat urna cras eleifend.
+          Whether you’re looking to grow your brand visibility, drive more sales, or craft a winning digital strategy — our team at Seen & Sold is here to help you take the next big step.
+
         </p>
       </div>
 
@@ -32,10 +33,15 @@
           <div class="col-md-5 p-4 text-white d-flex flex-column justify-content-between" style="background-color: #f6c340;">
             <div>
               <h4 class="fw-bold mb-3">Contact Us</h4>
-              <p class="text-light">Ut ac mattis senectus ac suspendisse vitae vel nulla eleifend. Est eros facilisi aenean nunc.</p>
-              <p class="mb-2"><i class="fa fa-telephone me-2"></i> 9999999999</p>
-              <p class="mb-2"><i class="fa fa-envelope me-2"></i> empowenext@email.net</p>
-              <p class="mb-4"><i class="fa fa-clock me-2"></i> Mon–Fri: 8:00am – 6:00pm</p>
+              <p class="text-light">Let’s discuss your goals and build a digital roadmap tailored for your brand.
+                Click the button below to book your free strategy session with our experts.</p>
+              <a href="tel:+91 8877004937" class="text-decoration-none text-white">
+                <p class="mb-2"><i class="fa fa-phone me-2"></i>+91 8877004937</p>
+              </a>
+              <a href="mailto:hello@seenandsold.in" class="text-decoration-none text-white">
+                <p class="mb-2"><i class="fa fa-envelope me-2"></i> hello@seenandsold.in</p>
+              </a>
+              <p class="mb-4"><i class="fa fa-clock me-2"></i> Mon–Sat: 10:00 AM – 7:00 PM IST</p>
             </div>
             <div class="d-flex gap-3 mt-3">
               <a href="#" class="text-white"><i class="fab fa-facebook fs-5"></i></a>
@@ -46,34 +52,38 @@
 
           <!-- Right Side -->
           <div class="col-md-7 bg-light p-4">
-            <form>
+            <form id="contactForm">
               <div class="row g-3">
                 <div class="col-md-6">
                   <label class="form-label fw-semibold">First Name</label>
-                  <input type="text" class="form-control" placeholder="First Name">
+                  <input type="text" class="form-control" name="firstName" placeholder="First Name">
                 </div>
                 <div class="col-md-6">
                   <label class="form-label fw-semibold">Last Name</label>
-                  <input type="text" class="form-control" placeholder="Last Name">
+                  <input type="text" class="form-control" name="lastName" placeholder="Last Name">
                 </div>
                 <div class="col-md-6">
                   <label class="form-label fw-semibold">Email Address</label>
-                  <input type="email" class="form-control" placeholder="Email Address">
+                  <input type="email" class="form-control" name="email" placeholder="Email Address">
                 </div>
                 <div class="col-md-6">
                   <label class="form-label fw-semibold">Phone Number</label>
-                  <input type="text" class="form-control" placeholder="Phone Number">
+                  <input type="text" class="form-control" name="phone" placeholder="Phone Number">
                 </div>
                 <div class="col-12">
                   <label class="form-label fw-semibold">Subject</label>
-                  <input type="text" class="form-control" placeholder="Subject">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject">
                 </div>
                 <div class="col-12">
                   <label class="form-label fw-semibold">Message</label>
-                  <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+                  <textarea class="form-control" rows="4" name="message" placeholder="Message"></textarea>
                 </div>
                 <div class="col-12">
-                  <button type="submit" class="btn btn-warning fw-bold text-white shadow-sm">SEND MESSAGE</button>
+                  <!-- Google reCAPTCHA -->
+                  <div class="g-recaptcha my-3" data-sitekey="6LcyAZYrAAAAAFtJwBBfCJC_9wBsA1GAo5kacCU6"></div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" id="contactBtnForm" class="btn btn-warning fw-bold text-white shadow-sm">Send Message</button>
                 </div>
               </div>
             </form>
@@ -85,31 +95,27 @@
 </section>
 
 <style>
-    .contact-section {
-      background: linear-gradient(to right, rgba(255, 204, 0, 0.7), rgba(255, 204, 0, 0.7)),
-        url('assets/img/contact-bg.webp') center center / cover no-repeat;
-      color: #fff;
-      padding: 60px 0;
-    }
+  .contact-section {
+    background: linear-gradient(to right, rgba(255, 204, 0, 0.7), rgba(255, 204, 0, 0.7)),
+      url('assets/img/contact-bg.webp') center center / cover no-repeat;
+    color: #fff;
+    padding: 60px 0;
+  }
 
-    .contact-section h2 {
-      font-weight: bold;
-    }
+  .contact-section h2 {
+    font-weight: bold;
+  }
 
-    .contact-section p {
-      color: #f0f0f0;
-    }
+  .social-icons i {
+    font-size: 24px;
+    margin-right: 15px;
+    color: #fff;
+    transition: 0.3s;
+  }
 
-    .social-icons i {
-      font-size: 24px;
-      margin-right: 15px;
-      color: #fff;
-      transition: 0.3s;
-    }
-
-    .social-icons i:hover {
-      color: #000;
-    }
+  .social-icons i:hover {
+    color: #000;
+  }
 </style>
 
 <section class="contact-section">
@@ -119,18 +125,19 @@
       <div class="col-md-6 mb-4">
         <h6 class="text-uppercase">Contact Us</h6>
         <h2 class="mb-3">We'd love to hear<br> from you</h2>
-        <p>Have any question in mind or want to enquire? Please feel free to contact us through the form or the following details.</p>
+        <p class="text-white">Have any question in mind or want to enquire? Please feel free to contact us through the form or the following details.</p>
       </div>
 
       <!-- Right Column -->
       <div class="col-md-6">
         <h6 class="fw-bold">Let’s talk!</h6>
-        <p>9999999999<br>
-          <a href="mailto:empowernext@email.com" class="text-white text-decoration-none">empowernext@email.com</a>
+        <p>
+          <a href="tel:+91 8877004937" class="text-decoration-none text-white">+91 8877004937</a><br>
+          <a href="mailto:hello@seenandsold.in" class="text-white text-decoration-none">hello@seenandsold.in</a>
         </p>
 
         <h6 class="fw-bold">Headoffice</h6>
-        <p>123 Address St,<br> Address City, India</p>
+        <p class="text-white">IX/6066 KASHYAP GALI, GANDHI NAGAR, <br> East Delhi, Delhi, 110031, India</p>
 
         <div class="social-icons mt-3">
           <a href="#"><i class="fab fa-facebook-f"></i></a>

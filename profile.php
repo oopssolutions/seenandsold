@@ -1,10 +1,10 @@
 <?php include 'includes/header.php'; ?>
 
-<div class="container bg-white shadow rounded py-5 my-5 px-5">
+<div class="container bg-white shadow rounded py-5 my-5 px-2 px-md-5">
     <div class="row align-items-center">
         <!-- Profile Image -->
         <div class="col-md-4 text-center mb-3 mb-md-0">
-            <img src="assets/img/vipul.webp" alt="Vipul Raghuwanshi" class="img-fluid" style="max-height: 250px;">
+            <img src="assets/img/vipul.jpg" alt="Vipul Raghuwanshi" class="img-fluid rounded" style="max-height: 250px;">
         </div>
 
         <!-- Profile Info -->
@@ -213,118 +213,118 @@
         <img src="assets/img/profile-images.webp" alt="images" class="w-100">
 
         <p class="text-muted small">
-                <b>Founders don’t need more jargon</b>
-                 — they need clarity, consistency, and conversions. Seen & Sold is built to be your marketing brain, so you can stay focused on building your business. No fluff, no delay — just results that compound.”
-            </p>
+            <b>Founders don’t need more jargon</b>
+            — they need clarity, consistency, and conversions. Seen & Sold is built to be your marketing brain, so you can stay focused on building your business. No fluff, no delay — just results that compound.”
+        </p>
     </div>
 
 
 </div>
 
 <section class="pb-5 bg-white">
-  <div class="container">
-    <div class="d-flex justify-content-between align-items-center mb-4">
-      <div>
-        <span class="text-warning text-uppercase fw-bold small">Reviews</span>
-        <h2 class="fw-bold">See What Our Customer Say About Us</h2>
-      </div>
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <div>
+                <span class="text-warning text-uppercase fw-bold small">Reviews</span>
+                <h2 class="fw-bold">See What Our Customer Say About Us</h2>
+            </div>
+        </div>
+
+        <div class="swiper testimonialSwiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="card shadow-sm p-4 m-1 border-0">
+                        <p>
+                            Thank you for your service. I am very pleased with the result.
+                            I have seen exponential growth in my business and it's all
+                            thanks to your amazing service.
+                        </p>
+                        <div class="d-flex align-items-center mt-4">
+                            <img
+                                src="https://randomuser.me/api/portraits/women/1.jpg"
+                                class="rounded-circle me-3"
+                                width="48"
+                                height="48"
+                                alt="User" />
+                            <div>
+                                <h6 class="fw-bold mb-0">Emily Stones</h6>
+                                <small>CEO, Marketing Guru</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="card shadow-sm p-4 m-1 border-0">
+                        <p>
+                            Incredible support and a wonderful team. I’ve seen great
+                            progress since partnering with them. Totally recommend!
+                        </p>
+                        <div class="d-flex align-items-center mt-4">
+                            <img
+                                src="https://randomuser.me/api/portraits/men/2.jpg"
+                                class="rounded-circle me-3"
+                                width="48"
+                                height="48"
+                                alt="User" />
+                            <div>
+                                <h6 class="fw-bold mb-0">John Parker</h6>
+                                <small>Founder, CreativeLabs</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <div class="card shadow-sm p-4 m-1 border-0">
+                        <p>
+                            Professional and reliable. Their work has made a huge
+                            difference in how we approach marketing today.
+                        </p>
+                        <div class="d-flex align-items-center mt-4">
+                            <img
+                                src="https://randomuser.me/api/portraits/women/3.jpg"
+                                class="rounded-circle me-3"
+                                width="48"
+                                height="48"
+                                alt="User" />
+                            <div>
+                                <h6 class="fw-bold mb-0">Sarah Lin</h6>
+                                <small>CMO, TechStart</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="swiper-slide">
+                    <div class="card shadow-sm p-4 m-1 border-0">
+                        <p>
+                            Professional and reliable. Their work has made a huge
+                            difference in how we approach marketing today.
+                        </p>
+                        <div class="d-flex align-items-center mt-4">
+                            <img
+                                src="https://randomuser.me/api/portraits/women/3.jpg"
+                                class="rounded-circle me-3"
+                                width="48"
+                                height="48"
+                                alt="User" />
+                            <div>
+                                <h6 class="fw-bold mb-0">Sarah Lin</h6>
+                                <small>CMO, TechStart</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more .swiper-slide as needed -->
+            </div>
+        </div>
     </div>
-
-    <div class="swiper testimonialSwiper">
-      <div class="swiper-wrapper">
-        <!-- Slide 1 -->
-        <div class="swiper-slide">
-          <div class="card shadow-sm p-4 m-1 border-0">
-            <p>
-              Thank you for your service. I am very pleased with the result.
-              I have seen exponential growth in my business and it's all
-              thanks to your amazing service.
-            </p>
-            <div class="d-flex align-items-center mt-4">
-              <img
-                src="https://randomuser.me/api/portraits/women/1.jpg"
-                class="rounded-circle me-3"
-                width="48"
-                height="48"
-                alt="User" />
-              <div>
-                <h6 class="fw-bold mb-0">Emily Stones</h6>
-                <small>CEO, Marketing Guru</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="swiper-slide">
-          <div class="card shadow-sm p-4 m-1 border-0">
-            <p>
-              Incredible support and a wonderful team. I’ve seen great
-              progress since partnering with them. Totally recommend!
-            </p>
-            <div class="d-flex align-items-center mt-4">
-              <img
-                src="https://randomuser.me/api/portraits/men/2.jpg"
-                class="rounded-circle me-3"
-                width="48"
-                height="48"
-                alt="User" />
-              <div>
-                <h6 class="fw-bold mb-0">John Parker</h6>
-                <small>Founder, CreativeLabs</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 3 -->
-        <div class="swiper-slide">
-          <div class="card shadow-sm p-4 m-1 border-0">
-            <p>
-              Professional and reliable. Their work has made a huge
-              difference in how we approach marketing today.
-            </p>
-            <div class="d-flex align-items-center mt-4">
-              <img
-                src="https://randomuser.me/api/portraits/women/3.jpg"
-                class="rounded-circle me-3"
-                width="48"
-                height="48"
-                alt="User" />
-              <div>
-                <h6 class="fw-bold mb-0">Sarah Lin</h6>
-                <small>CMO, TechStart</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 4 -->
-        <div class="swiper-slide">
-          <div class="card shadow-sm p-4 m-1 border-0">
-            <p>
-              Professional and reliable. Their work has made a huge
-              difference in how we approach marketing today.
-            </p>
-            <div class="d-flex align-items-center mt-4">
-              <img
-                src="https://randomuser.me/api/portraits/women/3.jpg"
-                class="rounded-circle me-3"
-                width="48"
-                height="48"
-                alt="User" />
-              <div>
-                <h6 class="fw-bold mb-0">Sarah Lin</h6>
-                <small>CMO, TechStart</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Add more .swiper-slide as needed -->
-      </div>
-    </div>
-  </div>
 </section>
 
 <?php include 'includes/footer.php'; ?>

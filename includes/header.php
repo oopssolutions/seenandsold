@@ -46,8 +46,8 @@
 
             <div class="d-none d-lg-flex ms-auto align-items-center">
                 <a class="nav-link fs-5 px-4 fw-bold" href="index.php">Home</a>
-                <a class="nav-link fs-5 px-4 fw-bold" href="index.php#services">Services</a>
-                <a class="nav-link fs-5 px-4 fw-bold" href="faqs.php">How it Works</a>
+                <a class="nav-link fs-5 px-4 fw-bold" href="services.php">Services</a>
+                <a class="nav-link fs-5 px-4 fw-bold" href="profile.php">Led By Vipul</a>
                 <a class="nav-link fs-5 px-4 fw-bold" href="about-us.php">About</a>
                 <a class="nav-link fs-5 px-4 fw-bold" href="contact-us.php">Contact Us</a>
                 <a class="btn btn-yellow btn-sm fs-5 ms-3" href="javascript:void(0);" data-bs-toggle="modal"
@@ -76,9 +76,10 @@
         </div>
         <div class="offcanvas-body">
             <a href="index.php"><i class="fa fa-home"></i> Home</a>
-            <!-- <a href="#"><i class="fa fa-user"></i> My Profile</a> -->
-            <a href="index.php#services"><i class="fa fa-briefcase"></i> Services</a>
-            <a href="javascript:void(0);"><i class="fa fa-calendar"></i> My Appointment</a>
+            <a href="services.php"><i class="fa fa-briefcase"></i> Services</a>
+            <a href="profile.php"><i class="fa fa-user"></i> Led By Vipul</a>
+            <a href="javascript:void(0);" data-bs-toggle="modal"
+                data-bs-target="#largeModal"><i class="fa fa-calendar"></i> My Appointment</a>
             <a href="about-us.php"><i class="fa fa-info-circle"></i> About</a>
             <a href="terms-and-conditions.php"><i class="fa fa-file"></i> Term & Conditions</a>
             <a href="privacy-policy.php"><i class="fa fa-lock"></i> Privacy Policy</a>

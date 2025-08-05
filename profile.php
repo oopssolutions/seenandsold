@@ -236,20 +236,18 @@
                 <div class="swiper-slide">
                     <div class="card shadow-sm p-4 m-1 border-0">
                         <p>
-                            Thank you for your service. I am very pleased with the result.
-                            I have seen exponential growth in my business and it's all
-                            thanks to your amazing service.
+                            Some people walk into your professional life and leave a mark-Vipul was one such individual for me. I had the honor of being his very first manager at Aircel, and even then, I knew he wasn't meant for the ordinary path. As I often told people back then-"Bada janwar hai, is chhote se pinjre mein nahi tik payega." He was restless, curious, deeply driven-and meant for far bigger things.
                         </p>
                         <div class="d-flex align-items-center mt-4">
                             <img
-                                src="https://randomuser.me/api/portraits/women/1.jpg"
+                                src="assets/img/testi1.jpg"
                                 class="rounded-circle me-3"
                                 width="48"
                                 height="48"
                                 alt="User" />
                             <div>
-                                <h6 class="fw-bold mb-0">Emily Stones</h6>
-                                <small>CEO, Marketing Guru</small>
+                                <h6 class="fw-bold mb-0">Aditya Srivastava</h6>
+                                <small>Assistant Vice President- Business Operations</small>
                             </div>
                         </div>
                     </div>
@@ -259,19 +257,18 @@
                 <div class="swiper-slide">
                     <div class="card shadow-sm p-4 m-1 border-0">
                         <p>
-                            Incredible support and a wonderful team. I’ve seen great
-                            progress since partnering with them. Totally recommend!
+                            Some professionals just do their job. Vipul goes far beyond that he creates impact, builds people, and moves things forward with purpose. I've had the privilege of working with Vipul, and it's rare to meet someone who blends such clarity of vision with humility in execution. He doesn't just deliver results; he inspires people around hi
                         </p>
                         <div class="d-flex align-items-center mt-4">
                             <img
-                                src="https://randomuser.me/api/portraits/men/2.jpg"
+                                src="assets/img/testi2.jpg"
                                 class="rounded-circle me-3"
                                 width="48"
                                 height="48"
                                 alt="User" />
                             <div>
-                                <h6 class="fw-bold mb-0">John Parker</h6>
-                                <small>Founder, CreativeLabs</small>
+                                <h6 class="fw-bold mb-0">Ashish Vats</h6>
+                                <small>IIM-Indore || EMI & Affordability/Category Management/Partnership & Alliance/Telecommunications/ Smartphones/Consumer Durables sales/Strategic Partnership</small>
                             </div>
                         </div>
                     </div>
@@ -281,47 +278,23 @@
                 <div class="swiper-slide">
                     <div class="card shadow-sm p-4 m-1 border-0">
                         <p>
-                            Professional and reliable. Their work has made a huge
-                            difference in how we approach marketing today.
+                            I have worked with Vipul for over 2 years. I have found Vipul very energentic and prompt when it comes to delivering things within a span of time. I appreicate his work ethics and passion to acheive something that he takes in hand. I recommend him and wish him very best for his endevours
                         </p>
                         <div class="d-flex align-items-center mt-4">
                             <img
-                                src="https://randomuser.me/api/portraits/women/3.jpg"
+                                src="assets/img/testi3.jpg"
                                 class="rounded-circle me-3"
                                 width="48"
                                 height="48"
                                 alt="User" />
                             <div>
-                                <h6 class="fw-bold mb-0">Sarah Lin</h6>
-                                <small>CMO, TechStart</small>
+                                <h6 class="fw-bold mb-0">Ikshit Chhabra</h6>
+                                <small>Deputy General Manager- Apollo Health & Lifestyle Ltd. | Growth Head- Tata 1mg | Co Founder, Healthcare Startup | Head Marketing | 15 YearsDeputy General Manager- Apollo Health & Lifestyle Ltd. | Growth Head- Tata 1mg | Co Founder, Healthcare Startup | Head Marketing | 15 Years</small>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Slide 4 -->
-                <div class="swiper-slide">
-                    <div class="card shadow-sm p-4 m-1 border-0">
-                        <p>
-                            Professional and reliable. Their work has made a huge
-                            difference in how we approach marketing today.
-                        </p>
-                        <div class="d-flex align-items-center mt-4">
-                            <img
-                                src="https://randomuser.me/api/portraits/women/3.jpg"
-                                class="rounded-circle me-3"
-                                width="48"
-                                height="48"
-                                alt="User" />
-                            <div>
-                                <h6 class="fw-bold mb-0">Sarah Lin</h6>
-                                <small>CMO, TechStart</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Add more .swiper-slide as needed -->
+                
             </div>
         </div>
     </div>

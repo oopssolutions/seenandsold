@@ -313,7 +313,7 @@
           width="50"
           class="mb-3" />
         <h6>Completed Projects</h6>
-        <h4 class="fw-bold text-warning mt-2">100 +</h4>
+        <h4 class="fw-bold text-warning mt-2 count" data-count="100" data-suffix="+">100+</h4>
       </div>
       <!-- Stat 2 -->
       <div class="col-md-3 col-6 mb-4 mb-md-0 border-start border-end">
@@ -323,7 +323,7 @@
           width="50"
           class="mb-3" />
         <h6>Customer Satisfaction</h6>
-        <h4 class="fw-bold text-warning mt-2">20 %</h4>
+        <h4 class="fw-bold text-warning mt-2 count" data-count="20" data-suffix="%">20%</h4>
       </div>
       <!-- Stat 3 -->
       <div class="col-md-3 col-6 mb-4 mb-md-0 border-end">
@@ -333,7 +333,7 @@
           width="50"
           class="mb-3" />
         <h6>Raised by Clients</h6>
-        <h4 class="fw-bold text-warning mt-2">$10M</h4>
+        <h4 class="fw-bold text-warning mt-2 count" data-count="10" data-suffix="M">10M</h4>
       </div>
       <!-- Stat 4 -->
       <div class="col-md-3 col-6">
@@ -343,64 +343,94 @@
           width="50"
           class="mb-3" />
         <h6>Years in Business</h6>
-        <h4 class="fw-bold text-warning mt-2">2 yrs</h4>
+        <h4 class="fw-bold text-warning mt-2 count" data-count="2" data-suffix="yrs">2yrs</h4>
       </div>
     </div>
   </div>
 </section>
 
+<script>
+  function animateCount(el, target) {
+    let current = 0;
+    const speed = 50; // Lower = faster
+    const increment = target / 100;
+
+    const update = () => {
+      current += increment;
+      if (current < target) {
+        el.textContent = Math.ceil(current);
+        requestAnimationFrame(update);
+      } else {
+        el.textContent = target + (el.dataset.suffix || '');
+      }
+    };
+
+    update();
+  }
+
+  let hasAnimated = false;
+
+  window.addEventListener("scroll", () => {
+    const section = document.querySelector(".count");
+    if (!section || hasAnimated) return;
+
+    const sectionTop = section.getBoundingClientRect().top;
+    if (sectionTop < window.innerHeight - 100) {
+      hasAnimated = true;
+      document.querySelectorAll(".count").forEach((el) => {
+        const target = parseInt(el.getAttribute("data-count"));
+        animateCount(el, target);
+      });
+    }
+  });
+</script>
+
+
 <section class="blog-section py-5">
   <div class="container">
     <h2 class="text-center fw-bold mb-5">See Our Blog Post</h2>
     <div class="row g-4">
-      <!-- Blog Card 1 -->
-      <div class="col-md-6 col-lg-6">
-        <div class="blog-card border-red">
+
+      <!-- Blog Card -->
+      <div class="col-12 col-md-6">
+        <div class="blog-card border-red h-100">
           <div class="row g-0">
-            <div class="col-5">
-              <img
-                src="assets/img/blog1.png"
-                alt="Blog 1"
-                class="img-fluid h-100 object-fit-cover rounded-start" />
+            <div class="col-4 col-sm-5">
+              <img src="assets/img/blog1.png" alt="Blog 1"
+                class="img-fluid h-100 object-fit-cover rounded-start w-100"
+                style="min-height: 100px;" />
             </div>
-            <div class="col-7 p-3 d-flex align-items-center">
+            <div class="col-8 col-sm-7 p-3 d-flex align-items-center">
               <div>
                 <small>19 Feb, 2022 / By Admin</small>
                 <h5 class="fw-bold">Digital marketing Tips</h5>
-                <p>
-                  Promotion World has once placed PageTraffic among the top.
-                </p>
-                <a
-                  href="javascript:void(0);" data-bs-toggle="modal"
+                <p class="mb-1 small">Promotion World has once placed PageTraffic among the top.</p>
+                <a href="javascript:void(0);" data-bs-toggle="modal"
                   data-bs-target="#largeModal"
-                  class="text-danger text-decoration-none fw-medium">Read more →</a>
+                  class="text-danger text-decoration-none fw-medium small">Read more →</a>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Blog Card 2 -->
-      <div class="col-md-6 col-lg-6">
-        <div class="blog-card border-green">
+      <!-- Repeat other cards similarly -->
+      <div class="col-12 col-md-6">
+        <div class="blog-card border-green h-100">
           <div class="row g-0">
-            <div class="col-5">
-              <img
-                src="assets/img/blog2.png"
-                alt="Blog 2"
-                class="img-fluid h-100 object-fit-cover rounded-start" />
+            <div class="col-4 col-sm-5">
+              <img src="assets/img/blog2.png" alt="Blog 2"
+                class="img-fluid h-100 object-fit-cover rounded-start w-100"
+                style="min-height: 100px;" />
             </div>
-            <div class="col-7 p-3 d-flex align-items-center">
+            <div class="col-8 col-sm-7 p-3 d-flex align-items-center">
               <div>
                 <small>09 Apr, 2022 / By Admin</small>
                 <h5 class="fw-bold">Improve your UX/UI</h5>
-                <p>
-                  Promotion World has once placed PageTraffic among the top.
-                </p>
-                <a
-                  href="javascript:void(0);" data-bs-toggle="modal"
+                <p class="mb-1 small">Promotion World has once placed PageTraffic among the top.</p>
+                <a href="javascript:void(0);" data-bs-toggle="modal"
                   data-bs-target="#largeModal"
-                  class="text-success text-decoration-none fw-medium">Read more →</a>
+                  class="text-success text-decoration-none fw-medium small">Read more →</a>
               </div>
             </div>
           </div>
@@ -408,26 +438,22 @@
       </div>
 
       <!-- Blog Card 3 -->
-      <div class="col-md-6 col-lg-6">
-        <div class="blog-card border-green">
+      <div class="col-12 col-md-6">
+        <div class="blog-card border-green h-100">
           <div class="row g-0">
-            <div class="col-5">
-              <img
-                src="assets/img/blog3.png"
-                alt="Blog 3"
-                class="img-fluid h-100 object-fit-cover rounded-start" />
+            <div class="col-4 col-sm-5">
+              <img src="assets/img/blog3.png" alt="Blog 3"
+                class="img-fluid h-100 object-fit-cover rounded-start w-100"
+                style="min-height: 100px;" />
             </div>
-            <div class="col-7 p-3 d-flex align-items-center">
+            <div class="col-8 col-sm-7 p-3 d-flex align-items-center">
               <div>
                 <small>25 Jan, 2022 / By Admin</small>
                 <h5 class="fw-bold">Meta Technology.</h5>
-                <p>
-                  Promotion World has once placed PageTraffic among the top.
-                </p>
-                <a
-                  href="javascript:void(0);" data-bs-toggle="modal"
+                <p class="mb-1 small">Promotion World has once placed PageTraffic among the top.</p>
+                <a href="javascript:void(0);" data-bs-toggle="modal"
                   data-bs-target="#largeModal"
-                  class="text-success text-decoration-none fw-medium">Read more →</a>
+                  class="text-success text-decoration-none fw-medium small">Read more →</a>
               </div>
             </div>
           </div>
@@ -435,34 +461,32 @@
       </div>
 
       <!-- Blog Card 4 -->
-      <div class="col-md-6 col-lg-6">
-        <div class="blog-card border-red">
+      <div class="col-12 col-md-6">
+        <div class="blog-card border-red h-100">
           <div class="row g-0">
-            <div class="col-5">
-              <img
-                src="assets/img/blog4.png"
-                alt="Blog 4"
-                class="img-fluid h-100 object-fit-cover rounded-start" />
+            <div class="col-4 col-sm-5">
+              <img src="assets/img/blog4.png" alt="Blog 4"
+                class="img-fluid h-100 object-fit-cover rounded-start w-100"
+                style="min-height: 100px;" />
             </div>
-            <div class="col-7 p-3 d-flex align-items-center">
+            <div class="col-8 col-sm-7 p-3 d-flex align-items-center">
               <div>
                 <small>13 Nov, 2022 / By Admin</small>
                 <h5 class="fw-bold">PageTraffic Ranks</h5>
-                <p>
-                  Promotion World has once placed PageTraffic among the top.
-                </p>
-                <a
-                  href="javascript:void(0);" data-bs-toggle="modal"
+                <p class="mb-1 small">Promotion World has once placed PageTraffic among the top.</p>
+                <a href="javascript:void(0);" data-bs-toggle="modal"
                   data-bs-target="#largeModal"
-                  class="text-danger text-decoration-none fw-medium">Read more →</a>
+                  class="text-danger text-decoration-none fw-medium small">Read more →</a>
               </div>
             </div>
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </section>
+
 
 <?php include 'includes/value.php' ?>
 
@@ -489,20 +513,18 @@
         <div class="swiper-slide">
           <div class="card shadow-sm p-4 m-1 border-0">
             <p>
-              Thank you for your service. I am very pleased with the result.
-              I have seen exponential growth in my business and it's all
-              thanks to your amazing service.
+              Some people walk into your professional life and leave a mark-Vipul was one such individual for me. I had the honor of being his very first manager at Aircel, and even then, I knew he wasn't meant for the ordinary path. As I often told people back then-"Bada janwar hai, is chhote se pinjre mein nahi tik payega." He was restless, curious, deeply driven-and meant for far bigger things.
             </p>
             <div class="d-flex align-items-center mt-4">
               <img
-                src="https://randomuser.me/api/portraits/women/1.jpg"
+                src="assets/img/testi1.jpg"
                 class="rounded-circle me-3"
                 width="48"
                 height="48"
                 alt="User" />
               <div>
-                <h6 class="fw-bold mb-0">Emily Stones</h6>
-                <small>CEO, Marketing Guru</small>
+                <h6 class="fw-bold mb-0">Aditya Srivastava</h6>
+                <small>Assistant Vice President- Business Operations</small>
               </div>
             </div>
           </div>
@@ -512,19 +534,18 @@
         <div class="swiper-slide">
           <div class="card shadow-sm p-4 m-1 border-0">
             <p>
-              Incredible support and a wonderful team. I’ve seen great
-              progress since partnering with them. Totally recommend!
+              Some professionals just do their job. Vipul goes far beyond that he creates impact, builds people, and moves things forward with purpose. I've had the privilege of working with Vipul, and it's rare to meet someone who blends such clarity of vision with humility in execution. He doesn't just deliver results; he inspires people around hi
             </p>
             <div class="d-flex align-items-center mt-4">
               <img
-                src="https://randomuser.me/api/portraits/men/2.jpg"
+                src="assets/img/testi2.jpg"
                 class="rounded-circle me-3"
                 width="48"
                 height="48"
                 alt="User" />
               <div>
-                <h6 class="fw-bold mb-0">John Parker</h6>
-                <small>Founder, CreativeLabs</small>
+                <h6 class="fw-bold mb-0">Ashish Vats</h6>
+                <small>IIM-Indore || EMI & Affordability/Category Management/Partnership & Alliance/Telecommunications/ Smartphones/Consumer Durables sales/Strategic Partnership</small>
               </div>
             </div>
           </div>
@@ -534,47 +555,23 @@
         <div class="swiper-slide">
           <div class="card shadow-sm p-4 m-1 border-0">
             <p>
-              Professional and reliable. Their work has made a huge
-              difference in how we approach marketing today.
+              I have worked with Vipul for over 2 years. I have found Vipul very energentic and prompt when it comes to delivering things within a span of time. I appreicate his work ethics and passion to acheive something that he takes in hand. I recommend him and wish him very best for his endevours
             </p>
             <div class="d-flex align-items-center mt-4">
               <img
-                src="https://randomuser.me/api/portraits/women/3.jpg"
+                src="assets/img/testi3.jpg"
                 class="rounded-circle me-3"
                 width="48"
                 height="48"
                 alt="User" />
               <div>
-                <h6 class="fw-bold mb-0">Sarah Lin</h6>
-                <small>CMO, TechStart</small>
+                <h6 class="fw-bold mb-0">Ikshit Chhabra</h6>
+                <small>Deputy General Manager- Apollo Health & Lifestyle Ltd. | Growth Head- Tata 1mg | Co Founder, Healthcare Startup | Head Marketing | 15 YearsDeputy General Manager- Apollo Health & Lifestyle Ltd. | Growth Head- Tata 1mg | Co Founder, Healthcare Startup | Head Marketing | 15 Years</small>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Slide 4 -->
-        <div class="swiper-slide">
-          <div class="card shadow-sm p-4 m-1 border-0">
-            <p>
-              Professional and reliable. Their work has made a huge
-              difference in how we approach marketing today.
-            </p>
-            <div class="d-flex align-items-center mt-4">
-              <img
-                src="https://randomuser.me/api/portraits/women/3.jpg"
-                class="rounded-circle me-3"
-                width="48"
-                height="48"
-                alt="User" />
-              <div>
-                <h6 class="fw-bold mb-0">Sarah Lin</h6>
-                <small>CMO, TechStart</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Add more .swiper-slide as needed -->
       </div>
     </div>
   </div>

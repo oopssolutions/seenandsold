@@ -684,17 +684,17 @@
 <footer
     class="mobile-footer d-md-none fixed-bottom bg-white shadow-lg rounded-top-4 px-4 py-3">
     <div
-        class="d-flex justify-content-between text-center align-items-center">
+        class="row d-flex justify-content-between text-center align-items-center">
         <!-- Home -->
-        <div class="flex-fill">
-            <a href="index.php" class="text-decoration-none">
-                <i class="fa fa-house text-warning fs-4 d-block"></i>
-                <small class="text-warning">Home</small>
+        <div class="col-4 flex-fill">
+            <a href="tel:+918877004937" class="text-decoration-none">
+                <i class="fa fa-phone text-secondary fs-4 d-block"></i>
+                <small class="text-secondary">Call</small>
             </a>
         </div>
 
         <!-- Consult Now -->
-        <div class="flex-fill" style="margin-top: -30px">
+        <div class="col-4 flex-fill" style="margin-top: -30px">
             <a href="javascript:void(0)" data-bs-toggle="modal"
                 data-bs-target="#largeModal" class="text-decoration-none">
                 <div
@@ -707,10 +707,10 @@
         </div>
 
         <!-- Profile -->
-        <div class="flex-fill">
-            <a href="profile.php" class="text-decoration-none">
-                <i class="fa fa-user text-secondary fs-4 d-block"></i>
-                <small class="text-secondary">Profile</small>
+        <div class="col-4 flex-fill">
+            <a href="https://wa.me/918877004937?text=Hello%20there!" class="text-decoration-none">
+                <i class="fa-brands fa-whatsapp text-secondary fs-3 d-block"></i>
+                <small class="text-secondary">Whatsapp</small>
             </a>
         </div>
     </div>
@@ -727,6 +727,11 @@
         slidesPerView: 1,
         spaceBetween: 30,
         loop: true,
+        speed: 500,
+        autoplay: {
+            delay: 1500,
+            disableOnInteraction: false
+        },
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
@@ -745,6 +750,11 @@
         slidesPerView: 1,
         spaceBetween: 30,
         loop: true,
+        speed: 500,
+        autoplay: {
+            delay: 1500,
+            disableOnInteraction: false
+        },
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev"
@@ -772,6 +782,11 @@
         slidesPerView: 1,
         spaceBetween: 30,
         loop: true,
+        speed: 500,
+        autoplay: {
+            delay: 1500,
+            disableOnInteraction: false
+        },
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev"

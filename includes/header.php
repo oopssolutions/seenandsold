@@ -52,7 +52,7 @@
                 <a class="nav-link fs-5 px-4 fw-bold" href="contact-us.php">Contact Us</a>
                 <a class="btn btn-yellow btn-sm fs-5 ms-3" href="javascript:void(0);" data-bs-toggle="modal"
                     data-bs-target="#largeModal">Consult now</a>
-                <!-- <a class="btn btn-outline-secondary btn-sm fs-5 ms-2" href="#">Sign in</a> -->
+
             </div>
         </div>
     </nav>
@@ -74,7 +74,7 @@
                 class="btn-close text-reset"
                 data-bs-dismiss="offcanvas"></button>
         </div>
-        <div class="offcanvas-body">
+        <div class="offcanvas-body fs-5">
             <a href="index.php"><i class="fa fa-home"></i> Home</a>
             <a href="services.php"><i class="fa fa-briefcase"></i> Services</a>
             <a href="profile.php"><i class="fa fa-user"></i> Led By Vipul</a>
@@ -83,7 +83,7 @@
             <a href="about-us.php"><i class="fa fa-info-circle"></i> About</a>
             <a href="terms-and-conditions.php"><i class="fa fa-file"></i> Term & Conditions</a>
             <a href="privacy-policy.php"><i class="fa fa-lock"></i> Privacy Policy</a>
-            <!-- <a href="#"><i class="fa fa-bullseye"></i> Our Mission</a> -->
+
             <a href="contact-us.php"><i class="fa fa-comments"></i> Contact Us</a>
             <a href="faqs.php"><i class="fa fa-question-circle"></i> Help & Support</a>
         </div>
